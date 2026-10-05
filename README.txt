@@ -31,14 +31,7 @@ Source
   tools/      Bootstrap instrumentation for the original Automation core.
   tests/      Configuration parsing and file preservation checks.
 
-Build
-  Requires a .NET SDK supporting netstandard2.1, installed Windows game
-  Managed assemblies, the original Automation 1.1.0 core and Windows patcher.
-  Those game assemblies are not included in this repository or release.
-
-  powershell -ExecutionPolicy Bypass -File build.ps1 -GameManaged "C:\path\to\Dressmaker_Data\Managed" -OriginalCore "C:\path\to\original\DressmakerAutomation.Core.dll" -PatcherDirectory "C:\path\to\patcher\win"
-
-  Output: artifacts/DressmakerAutomation-UI-Windows-1.0.4.zip
+Tests
   Configuration tests: dotnet run --project tests/SettingsTests.csproj
   The test project currently targets .NET 10.
 

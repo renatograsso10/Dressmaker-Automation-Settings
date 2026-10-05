@@ -4,3 +4,4 @@ artifacts/
 *.user
 *.suo
 compatibility-report.txt
+/build.ps1
