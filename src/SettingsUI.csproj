@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>DressmakerAutomation.SettingsUI</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Version>1.0.3</Version>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <GameManaged Condition="'$(GameManaged)' == ''">$(MSBuildProgramFiles32)\Steam\steamapps\common\Dressmaker\Dressmaker_Data\Managed</GameManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameManaged)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Framework"><HintPath>$(GameManaged)\Framework.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameManaged)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(GameManaged)\UnityEngine.UIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(GameManaged)\UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(GameManaged)\UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(GameManaged)\UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule"><HintPath>$(GameManaged)\UnityEngine.TextCoreFontEngineModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule"><HintPath>$(GameManaged)\UnityEngine.TextCoreTextEngineModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.ImageConversionModule"><HintPath>$(GameManaged)\UnityEngine.ImageConversionModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule"><HintPath>$(GameManaged)\UnityEngine.JSONSerializeModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.SceneManagementModule" Condition="Exists('$(GameManaged)\UnityEngine.SceneManagementModule.dll')"><HintPath>$(GameManaged)\UnityEngine.SceneManagementModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.TextMeshPro"><HintPath>$(GameManaged)\Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

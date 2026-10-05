@@ -1,0 +1,18 @@
+Settings UI and installer additions: renatograsso10.
+
+Original Dressmaker Automation: buchongfuname and contributors, MIT.
+https://www.nexusmods.com/dressmaker/mods/88
+
+Windows installer distribution: DearSweetele.
+https://www.nexusmods.com/dressmaker/mods/218
+https://github.com/DearSweetele/Dressmaker-Automation-Windows-version-
+
+This is an independent settings UI extension. It is not an official
+update or an endorsement by the original author or Windows port maintainer.
+
+Release includes the original Windows patcher, an instrumented MIT-licensed
+Automation core, and Mono.Cecil. Mono.Cecil: Jb Evain and contributors, MIT.
+Its license is included under THIRD_PARTY_LICENSES.
+
+Unity and Dressmaker game assemblies are referenced from the user's game
+installation and are not distributed.
